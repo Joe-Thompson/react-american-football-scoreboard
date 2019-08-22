@@ -3,10 +3,31 @@
   --red: #ff2d2b;
 }
 
+#title {
+  background-color: black;
+  color: brown;
+  font-weight: 900;
+  font-family: 'Anton', sans-serif;
+  padding: 1rem;
+}
+
+.possesion {
+  display: block;
+  margin: 0 auto;
+}
+
+.defense {
+  display: none;
+}
+
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
+  /* background-color: #0b5402; */
+  background-image: url('https://www.dualshockers.com/wp-content/uploads/2016/01/tecmostadium.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
@@ -34,11 +55,11 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: dodgerblue;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: hotpink;
 }
 
 .home__name,
@@ -77,7 +98,7 @@
   display: flex;
   justify-content: space-around;
   place-items: center;
-  height: 20rem;
+  height: 50rem;
 }
 
 .down,
@@ -111,12 +132,25 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  padding-top: 1.5rem;
 }
 
 .homeButtons__touchdown,
 .homeButtons__fieldGoal,
 .awayButtons__touchdown,
-.awayButtons__fieldGoal {
+.awayButtons__fieldGoal,
+.scoreboardKeeper  {
   margin: 1rem;
   border-radius: 4px;
+  color: white;
+  background-color: black;
+}
+
+.homeButtons__touchdown,
+.homeButtons__fieldGoal {
+  background-color: dodgerblue;
+}
+.awayButtons__touchdown,
+.awayButtons__fieldGoal {
+  background-color: hotpink;
 }
